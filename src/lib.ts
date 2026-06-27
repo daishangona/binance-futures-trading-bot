@@ -1,0 +1,10 @@
+export { TradingBot } from './bot.js';
+export { loadConfig, loadCredentials } from './config/index.js';
+export { EventBus } from './core/events.js';
+export type * from './core/types.js';
+export { createExchangeAdapter } from './exchanges/index.js';
+export type { ExchangeAdapter } from './exchanges/types.js';
+export { computeFuturesKellyStake, formatStakeUsd, stakeToQuantity } from './risk/position-sizing.js';
+export { RiskService } from './risk/service.js';
+export { StateStore } from './state/store.js';
+export { StrategyService } from './strategy/service.js';

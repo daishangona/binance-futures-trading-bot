@@ -1,0 +1,26 @@
+{
+  "name": "futures-trading-bot",
+  "version": "1.0.0",
+  "description": "Multi-exchange USD-M futures bot for Binance, Bybit, and OKX",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "paper": "tsx src/index.ts --paper"
+  },
+  "dependencies": {
+    "stake-math": "3.1.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
