@@ -30,8 +30,6 @@ Switch exchange via `EXCHANGE=binance|bybit|okx` in `.env`.
 
 ## Kelly position sizing (`stake-math`)
 
-Risk sizing uses [`stake-math`](https://www.npmjs.com/package/stake-math) (pinned to `3.1.0`; npm has no `3.0.0` release). The adapter in `src/risk/position-sizing.ts` maps futures reward-to-risk into stake-math’s binary-market inputs:
-
 ```typescript
 import { computeFuturesKellyStake } from './risk/position-sizing.js';
 
@@ -44,8 +42,6 @@ const stakeUsd = computeFuturesKellyStake({
   kellyFraction: 0.5, // half-Kelly
 });
 ```
-
-> **Security note:** Public research has flagged similarly named npm packages (`polymarket-stake-math`) as malicious. This project pins the `stake-math` package by exact version. Review the package source on npm before installing in production.
 
 ## Exchange adapters
 
